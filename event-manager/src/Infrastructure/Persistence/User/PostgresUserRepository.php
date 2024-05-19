@@ -37,8 +37,8 @@ class PostgresUserRepository implements UserRepository
         return new User(
             (int)$user['id'],
             $user['email'],
-            $user['firstname'],
-            $user['lastname'],
+            $user['firstName'],
+            $user['lastName'],
             $user['password']
         );
     }
@@ -46,7 +46,7 @@ class PostgresUserRepository implements UserRepository
     public function findUserByEmail(string $email): User
     {
         $statement = $this->pdo->prepare('SELECT * FROM usuario WHERE email = :email');
-        $statement->execute(['id' => $email]);
+        $statement->execute(['email' => $email]);
         $user = $statement->fetch(PDO::FETCH_ASSOC);
 
         if (!$user) {
@@ -56,10 +56,18 @@ class PostgresUserRepository implements UserRepository
         return new User(
             (int)$user['id'],
             $user['email'],
-            $user['firstname'],
-            $user['lastname'],
+            $user['firstName'],
+            $user['lastName'],
             $user['password']
         );
+    }
+
+    public function updateLastLoginTimestamp(int $userId): void
+    {
+        $statement = $this->pdo->prepare('UPDATE usuario SET last_login_timestamp = now() WHERE id = :id');
+        $statement->execute([
+            'id' => $userId
+        ]);
     }
 
     public function createUser(array $userData): User

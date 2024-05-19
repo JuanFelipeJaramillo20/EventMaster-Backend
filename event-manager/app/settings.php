@@ -22,11 +22,11 @@ return function (ContainerBuilder $containerBuilder) {
                     'level' => Logger::DEBUG,
                 ],
                 'db' => [
-                    'host' => getenv('DB_HOST') ?: 'db',
-                    'port' => getenv('DB_PORT') ?: '5432',
-                    'database' => getenv('DB_DATABASE') ?: 'eventos',
-                    'username' => getenv('DB_USERNAME') ?: 'postgres',
-                    'password' => getenv('DB_PASSWORD') ?: 'admin',
+                    'host' => getenv('DB_HOST') ?: 'demo5.linkisite.com',
+                    'port' => getenv('DB_PORT') ?: '3306',
+                    'database' => getenv('DB_DATABASE') ?: 'demo5linkisite_mydb2',
+                    'username' => getenv('DB_USERNAME') ?: 'demo5linkisite_myuser2',
+                    'password' => getenv('DB_PASSWORD') ?: 'uB7UsE_3Bzzh',
                 ],
             ]);
         }

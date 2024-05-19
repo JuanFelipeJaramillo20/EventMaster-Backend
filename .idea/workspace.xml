@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9afd77b5-1963-4cf2-a727-f14bdcd6d838" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/event-manager/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/app/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/app/settings.php" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/app/settings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/public/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/setup.sql" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/setup.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/src/Application/Actions/Event/ViewEventAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/src/Application/Actions/Event/ViewEventAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/src/Application/Actions/User/LoginAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/src/Application/Actions/User/LoginAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/src/Application/Actions/User/ViewUserAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/src/Application/Actions/User/ViewUserAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/src/Application/Middleware/TokenAuthenticationMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/src/Application/Middleware/TokenAuthenticationMiddleware.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/src/Domain/User/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/src/Domain/User/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/src/Infrastructure/Persistence/Event/PostgresEventRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/src/Infrastructure/Persistence/Event/PostgresEventRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/src/Infrastructure/Persistence/User/PostgresUserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/src/Infrastructure/Persistence/User/PostgresUserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/src/Traits/AccessTokenGeneratorTrait.php" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/src/Traits/AccessTokenGeneratorTrait.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +33,13 @@
   <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/event-manager/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -100,6 +120,7 @@
       <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/event-manager/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/firebase/php-jwt" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -183,7 +204,11 @@
       <workItem from="1714524392298" duration="1508000" />
       <workItem from="1714533712288" duration="10662000" />
       <workItem from="1714578590004" duration="15349000" />
-      <workItem from="1716131739346" duration="79000" />
+      <workItem from="1716131739346" duration="1152000" />
+      <workItem from="1716132926143" duration="270000" />
+      <workItem from="1716135774278" duration="1547000" />
+      <workItem from="1716138126404" duration="4692000" />
+      <workItem from="1716145032148" duration="1439000" />
     </task>
     <servers />
   </component>

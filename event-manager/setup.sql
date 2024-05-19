@@ -4,7 +4,9 @@ CREATE TABLE "usuario"
     firstName VARCHAR(150) NOT NULL,
     lastName VARCHAR(150) NOT NULL,
     email VARCHAR(150) NOT NULL,
-    password VARCHAR(600) NOT NULL
+    password VARCHAR(600) NOT NULL,
+    last_login_timestamp TIMESTAMP,
+
 );
 
 CREATE TABLE evento (

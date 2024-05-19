@@ -43,7 +43,7 @@ class ViewEventAction extends EventAction
         $eventId = (int) $this->resolveArg('id');
         $event = $this->eventRepository->findEventById($eventId);
 
-        $this->logger->info("Event of id `${eventId}` was viewed.");
+        $this->logger->info("Event of id `{$eventId}` was viewed.");
 
         return $this->respondWithData($event);
 

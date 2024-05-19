@@ -18,7 +18,7 @@ $containerBuilder = new ContainerBuilder();
 $containerBuilder->addDefinitions([
     'db' => function ($c) {
         $db = $c->get(SettingsInterface::class)->get('db');
-        $pdo = new PDO('pgsql:host=' . $db['host'] . ';dbname=' . $db['database'],
+        $pdo = new PDO('mysql:host=' . $db['host'] . ';port=' . $db['port'] . ';dbname=' . $db['database'],
             $db['username'], $db['password']);
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
@@ -26,7 +26,7 @@ $containerBuilder->addDefinitions([
     },
     PDO::class => function ($c) {
         $db = $c->get(SettingsInterface::class)->get('db');
-        $dsn = 'pgsql:host=' . $db['host'] . ';dbname=' . $db['database'];
+        $dsn = 'mysql:host=' . $db['host'] . ';port=' . $db['port'] . ';dbname=' . $db['database'];
         $username = $db['username'];
         $password = $db['password'];
         $options = [

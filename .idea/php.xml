@@ -91,6 +91,7 @@
       <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/comparator" />
       <path value="$PROJECT_DIR$/event-manager/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/firebase/php-jwt" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />

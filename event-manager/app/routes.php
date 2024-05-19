@@ -20,7 +20,7 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\App;
 use Slim\Interfaces\RouteCollectorProxyInterface as Group;
-use App\Application\Middleware\SessionMiddleware;
+use App\Application\Middleware\TokenAuthenticationMiddleware;
 
 return function (App $app) {
     $app->options('/{routes:.*}', function (Request $request, Response $response) {
@@ -41,7 +41,10 @@ return function (App $app) {
         $group->delete('/{id}', DeleteUserAction::class);
     });
 
-    $app->group('/events', function (Group $group) {
+    $tokenMiddleware = new TokenAuthenticationMiddleware('secret_key_test');
+
+
+    $app->group('/events', function (Group $group) use ($tokenMiddleware) {
        $group->get('', ListEventsAction::class);
        $group->post('', CreateEventAction::class);
        $group->get('/{id}', ViewEventAction::class);
@@ -50,7 +53,7 @@ return function (App $app) {
        $group->get('/{id}/attendees', GetEventAttendeesAction::class);
        $group->post('/{id}/addAttendee', AddUserToEventAction::class);
        $group->post('/{id}/removeAttendee', RemoveUserFromEventAction::class);
-    })->add(SessionMiddleware::class);
+    })->add($tokenMiddleware);
 
     $app->post('/login',  LoginAction::class);
 

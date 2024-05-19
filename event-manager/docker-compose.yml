@@ -12,24 +12,25 @@ services:
         depends_on:
             - db
         environment:
-            DB_HOST: db
-            DB_PORT: 5432
-            DB_DATABASE: eventos
-            DB_USERNAME: postgres
-            DB_PASSWORD: admin
+            DB_HOST: demo5.linkisite.com
+            DB_PORT: 3306
+            DB_DATABASE: demo5linkisite_mydb2
+            DB_USERNAME: demo5linkisite_myuser2
+            DB_PASSWORD: uB7UsE_3Bzzh
         networks:
             - app-network
 
     db:
-        image: postgres:13
+        image: mysql:latest
         environment:
-            POSTGRES_DB: eventos
-            POSTGRES_USER: postgres
-            POSTGRES_PASSWORD: admin
+            MYSQL_DATABASE: demo5linkisite_mydb2
+            MYSQL_USER: demo5linkisite_myuser2
+            MYSQL_PASSWORD: uB7UsE_3Bzzh
+            MYSQL_ROOT_PASSWORD: root_password_here
         ports:
-            - "5432:5432"
+            - "3306:3306"
         volumes:
-            - ./setup.sql:/docker-entrypoint-initdb.d/setup.sql
+            - ./mysql-data:/var/lib/mysql
         networks:
             - app-network
 

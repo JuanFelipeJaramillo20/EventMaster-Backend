@@ -134,8 +134,8 @@ class PostgresEventRepository implements EventRepository
                 $attendees[] = new User(
                     (int)$userData['id'],
                     $userData['email'],
-                    $userData['firstname'],
-                    $userData['lastname'],
+                    $userData['firstName'],
+                    $userData['lastName'],
                     $userData['password']
                 );
             }

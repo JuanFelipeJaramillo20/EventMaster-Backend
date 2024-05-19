@@ -26,6 +26,13 @@ interface UserRepository
     public function findUserByEmail(string $email): User;
 
     /**
+     * @param $userId int
+     * @return void
+     * @throws UserNotFoundException
+     */
+    public function updateLastLoginTimestamp(int $userId): void;
+
+    /**
      * Create a new user.
      *
      * @param array $userData
