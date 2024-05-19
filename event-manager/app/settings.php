@@ -22,11 +22,11 @@ return function (ContainerBuilder $containerBuilder) {
                     'level' => Logger::DEBUG,
                 ],
                 'db' => [
-                    'host' => 'localhost',
-                    'port' => '5432',
-                    'database' => 'eventos',
-                    'username' => 'postgres',
-                    'password' => 'admin',
+                    'host' => getenv('DB_HOST') ?: 'db',
+                    'port' => getenv('DB_PORT') ?: '5432',
+                    'database' => getenv('DB_DATABASE') ?: 'eventos',
+                    'username' => getenv('DB_USERNAME') ?: 'postgres',
+                    'password' => getenv('DB_PASSWORD') ?: 'admin',
                 ],
             ]);
         }

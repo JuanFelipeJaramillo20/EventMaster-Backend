@@ -26,7 +26,7 @@ $containerBuilder->addDefinitions([
     },
     PDO::class => function ($c) {
         $db = $c->get(SettingsInterface::class)->get('db');
-        $dsn = 'pgsql:host=localhost;dbname='. $db['database'];
+        $dsn = 'pgsql:host=' . $db['host'] . ';dbname=' . $db['database'];
         $username = $db['username'];
         $password = $db['password'];
         $options = [
@@ -36,6 +36,7 @@ $containerBuilder->addDefinitions([
         return new PDO($dsn, $username, $password, $options);
     }
 ]);
+
 
 if (false) { // Should be set to true in production
 	$containerBuilder->enableCompilation(__DIR__ . '/../var/cache');
