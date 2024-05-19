@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9afd77b5-1963-4cf2-a727-f14bdcd6d838" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/composer.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/public/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/event-manager/app/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/event-manager/app/routes.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/event-manager/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\laragon\bin\php\php-8.1.10-Win32-vs16-x64\php.exe">
+    <include_path>
+      <path value="$PROJECT_DIR$/app/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/app/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/app/vendor/nyholm/psr7-server" />
+      <path value="$PROJECT_DIR$/app/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/app/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/app/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/composer" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/slim/psr7" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/php-di/invoker" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/php-di/php-di" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/php-di/phpdoc-reader" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpspec/prophecy-phpunit" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpstan/extension-installer" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/zircote/swagger-php" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/jangregor/phpstan-prophecy" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/complexity" />
+    </include_path>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2fqMvzoWUpsjsEF7Fa3TtDyKSm3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;OpenAPI/Swagger Code Generator.openapi.yaml.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;php.override.implement.member.chooser.php.doc&quot;: &quot;NONE&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
+  }
+}</component>
+  <component name="RunManager" selected="OpenAPI/Swagger Code Generator.openapi.yaml">
+    <configuration name="Main" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner configuration_file="$PROJECT_DIR$/event-manager/phpunit.xml" scope="XML" use_alternative_configuration_file="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="openapi.yaml" type="SwaggerCodegen" editBeforeRun="true" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="customTemplatesPath" value="" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="generateToPath" value="C:\Users\USUARIO\gen" />
+      <option name="generationParameters">
+        <list />
+      </option>
+      <option name="generatorType" value="OPENAPI_GENERATOR_V6" />
+      <option name="jdkPath" value="C:\Program Files\JetBrains\PhpStorm 2024.1\jbr\bin\java.exe" />
+      <option name="language" value="php" />
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="specificationPath" value="C:\Users\USUARIO\Documents\WWW\EventMaster-Backend\event-manager\openapi.yaml" />
+      <option name="workingDirectory" value="C:\Users\USUARIO\Documents\WWW\EventMaster-Backend\event-manager" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="OpenAPI/Swagger Code Generator.openapi.yaml" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PS-241.14494.237" />
+        <option value="bundled-php-predefined-ba97393d7c68-8f0632a2a215-com.jetbrains.php.sharedIndexes-PS-241.14494.237" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9afd77b5-1963-4cf2-a727-f14bdcd6d838" name="Changes" comment="" />
+      <created>1714524391187</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714524391187</updated>
+      <workItem from="1714524392298" duration="1508000" />
+      <workItem from="1714533712288" duration="10662000" />
+      <workItem from="1714578590004" duration="15349000" />
+      <workItem from="1716131739346" duration="79000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

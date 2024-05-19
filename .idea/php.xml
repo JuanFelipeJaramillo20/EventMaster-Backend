@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpCodeSniffer">
+    <phpcs_settings>
+      <PhpCSConfiguration beautifier_path="$PROJECT_DIR$/event-manager/vendor/bin/phpcbf" tool_path="$PROJECT_DIR$/event-manager/vendor/bin/phpcs" />
+    </phpcs_settings>
+  </component>
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/app/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/app/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/app/vendor/nyholm/psr7-server" />
+      <path value="$PROJECT_DIR$/app/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/app/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/app/vendor/composer" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/app/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/squizlabs/php_codesniffer" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/composer" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/slim/psr7" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/php-di/invoker" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/php-di/php-di" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/php-di/phpdoc-reader" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/laravel/serializable-closure" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpspec/prophecy-phpunit" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpstan/extension-installer" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpstan/phpdoc-parser" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/zircote/swagger-php" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/doctrine/deprecations" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/jangregor/phpstan-prophecy" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/event-manager/vendor/sebastian/complexity" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />
+  <component name="PhpStan">
+    <PhpStan_settings>
+      <PhpStanConfiguration tool_path="$PROJECT_DIR$/event-manager/vendor/bin/phpstan" />
+    </PhpStan_settings>
+  </component>
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings configuration_file_path="$PROJECT_DIR$/event-manager/phpunit.xml" custom_loader_path="$PROJECT_DIR$/event-manager/vendor/autoload.php" use_configuration_file="true" />
+    </phpunit_settings>
+  </component>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
+  </component>
+</project>

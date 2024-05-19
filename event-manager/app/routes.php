@@ -7,6 +7,7 @@ use App\Application\Actions\User\ViewUserAction;
 use App\Application\Actions\User\CreateUserAction;
 use App\Application\Actions\User\UpdateUserAction;
 use App\Application\Actions\User\DeleteUserAction;
+use App\Application\Actions\User\LoginAction;
 use App\Application\Actions\Event\ListEventsAction;
 use App\Application\Actions\Event\ViewEventAction;
 use App\Application\Actions\Event\CreateEventAction;
@@ -51,9 +52,7 @@ return function (App $app) {
        $group->post('/{id}/removeAttendee', RemoveUserFromEventAction::class);
     })->add(SessionMiddleware::class);
 
-    $app->post('/login', function (Request $request, Response $response) {
-        // Implement login logic here
-    });
+    $app->post('/login',  LoginAction::class);
 
     $app->post('/register', CreateUserAction::class);
 };
