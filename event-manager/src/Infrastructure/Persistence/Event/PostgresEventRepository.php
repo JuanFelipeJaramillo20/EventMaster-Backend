@@ -99,12 +99,24 @@ class PostgresEventRepository implements EventRepository
      */
     public function addUserToEvent(int $eventId, User $user): void
     {
-        $statement = $this->pdo->prepare('INSERT INTO usuario_evento (eventId, userId) VALUES (:eventId, :userId)');
-        $statement->execute([
+        $checkStatement = $this->pdo->prepare('SELECT COUNT(*) FROM usuario_evento WHERE eventId = :eventId AND userId = :userId');
+        $checkStatement->execute([
             'eventId' => $eventId,
             'userId' => $user->getId()
         ]);
+        $rowCount = $checkStatement->fetchColumn();
+
+        if ($rowCount == 0) {
+            $statement = $this->pdo->prepare('INSERT INTO usuario_evento (eventId, userId) VALUES (:eventId, :userId)');
+            $statement->execute([
+                'eventId' => $eventId,
+                'userId' => $user->getId()
+            ]);
+        } else {
+            throw new \Exception('User is already added to this event.');
+        }
     }
+
 
     /**
      * @inheritDoc
