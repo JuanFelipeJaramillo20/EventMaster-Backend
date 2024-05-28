@@ -125,7 +125,7 @@ class PostgresEventRepository implements EventRepository
     {
         $statement = $this->pdo->prepare('SELECT * FROM usuario_evento WHERE eventId = :eventId');
         $statement->execute(['eventId' => $eventId]);
-        $userIds = $statement->fetchAll(PDO::FETCH_COLUMN, 1); // Assuming the userId is in the second column
+        $userIds = $statement->fetchAll(PDO::FETCH_COLUMN, 2); // Assuming the userId is in the second column
 
         $attendees = [];
         foreach ($userIds as $userId) {
