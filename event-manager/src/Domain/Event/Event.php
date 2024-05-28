@@ -39,14 +39,30 @@ class Event implements JsonSerializable
      */
     private int $capacity;
 
+    /**
+     * @OA\Property(type="integer", format="int64", readOnly=true, example=1)
+     */
+    private ?int $user_creator_id;
 
-    public function __construct(?int $id, string $name, string $description, string $type, int $capacity)
+
+    public function __construct(?int $id, string $name, string $description, string $type, int $capacity, int $user_creator_id)
     {
         $this->id = $id;
         $this->name = $name;
         $this->description = $description;
         $this->type = $type;
         $this->capacity = $capacity;
+        $this->user_creator_id = $user_creator_id;
+    }
+
+    public function getUserCreatorId(): ?int
+    {
+        return $this->user_creator_id;
+    }
+
+    public function setUserCreatorId(?int $user_creator_id): void
+    {
+        $this->user_creator_id = $user_creator_id;
     }
 
     public function getId(): ?int
@@ -94,7 +110,6 @@ class Event implements JsonSerializable
         $this->capacity = $capacity;
     }
 
-    #[\ReturnTypeWillChange]
     public function jsonSerialize(): array
     {
         return [
@@ -103,6 +118,7 @@ class Event implements JsonSerializable
             'description' => $this->description,
             'type' => $this->type,
             'capacity' => $this->capacity,
+            'user_creator_id' => $this->user_creator_id,
         ];
     }
 }

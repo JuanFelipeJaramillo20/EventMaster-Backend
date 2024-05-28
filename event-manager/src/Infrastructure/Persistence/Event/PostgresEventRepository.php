@@ -45,7 +45,8 @@ class PostgresEventRepository implements EventRepository
             $evento['name'],
             $evento['description'],
             $evento['type'],
-            $evento['capacity']
+            $evento['capacity'],
+            (int)$evento['user_creator_id'],
         );
     }
 
@@ -54,16 +55,17 @@ class PostgresEventRepository implements EventRepository
      */
     public function createEvent(array $eventData): Event
     {
-        $statement = $this->pdo->prepare('INSERT INTO evento (name, description, type, capacity) VALUES (:name, :description, :type, :capacity)');
+        $statement = $this->pdo->prepare('INSERT INTO evento (name, description, type, capacity, user_creator_id) VALUES (:name, :description, :type, :capacity, :user_creator_id)');
         $statement->execute([
             'name' => $eventData['name'],
             'description' => $eventData['description'],
             'type' => $eventData['type'],
-            'capacity' => $eventData['capacity']
+            'capacity' => $eventData['capacity'],
+            'user_creator_id' => $eventData['user_creator_id'],
         ]);
 
         $eventId = (int)$this->pdo->lastInsertId();
-        return new Event($eventId, $eventData['name'], $eventData['description'], $eventData['type'], $eventData['capacity']);
+        return new Event($eventId, $eventData['name'], $eventData['description'], $eventData['type'], $eventData['capacity'], $eventData['user_creator_id']);
     }
 
     /**
@@ -80,7 +82,7 @@ class PostgresEventRepository implements EventRepository
             'capacity' => $eventData['capacity']
         ]);
 
-        return new Event($id, $eventData['name'], $eventData['description'], $eventData['type'], $eventData['capacity']);
+        return new Event($id, $eventData['name'], $eventData['description'], $eventData['type'], $eventData['capacity'], $eventData['user_creator_id']);
     }
 
     /**
