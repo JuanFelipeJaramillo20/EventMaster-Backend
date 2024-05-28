@@ -24,13 +24,20 @@ use App\Application\Middleware\TokenAuthenticationMiddleware;
 
 return function (App $app) {
     $app->options('/{routes:.*}', function (Request $request, Response $response) {
-        // CORS Pre-Flight OPTIONS Request Handler
         return $response;
     });
 
     $app->get('/', function (Request $request, Response $response) {
         $response->getBody()->write('Hello world!');
         return $response;
+    });
+
+    $app->add(function ($req, $res, $next) {
+        $response = $next($req, $res);
+        return $response
+            ->withHeader('Access-Control-Allow-Origin', '*')
+            ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
+            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
     });
 
     $app->group('/users', function (Group $group) {
@@ -58,4 +65,9 @@ return function (App $app) {
     $app->post('/login',  LoginAction::class);
 
     $app->post('/register', CreateUserAction::class);
+
+    $app->map(['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], '/{routes:.+}', function($req, $res) {
+        $handler = $this->notFoundHandler;
+        return $handler($req, $res);
+    });
 };
