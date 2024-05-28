@@ -25,7 +25,7 @@ class LoginAction extends UserAction
             if (password_verify($password, $user->getPassword())) {
                 $accessToken = $this->generateAccessToken($user);
                 $this->userRepository->updateLastLoginTimestamp($user->getId());
-                return $this->respondWithData(['success' => true, 'access_token' => $accessToken]);
+                return $this->respondWithData(['success' => true, 'access_token' => $accessToken, 'userId' => $user->getId()]);
             } else {
                 return $this->respondWithData(['success' => false, 'error' => 'Invalid username or password'], 401);
             }
