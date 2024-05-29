@@ -21,6 +21,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Slim\App;
 use Slim\Interfaces\RouteCollectorProxyInterface as Group;
 use App\Application\Middleware\TokenAuthenticationMiddleware;
+use App\Application\Middleware\CorsMiddleware;
 
 return function (App $app) {
     $app->options('/{routes:.*}', function (Request $request, Response $response) {
@@ -32,13 +33,7 @@ return function (App $app) {
         return $response;
     });
 
-    $app->add(function ($req, $res, $next) {
-        $response = $next($req, $res);
-        return $response
-            ->withHeader('Access-Control-Allow-Origin', '*')
-            ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
-            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, PATCH, OPTIONS');
-    });
+    $app->add(CorsMiddleware::class);
 
     $app->group('/users', function (Group $group) {
         $group->get('', ListUsersAction::class);
